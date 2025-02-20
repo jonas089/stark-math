@@ -9,8 +9,9 @@ builder.assert_eq(a_next, a + b);
 
 This example will enforce a constraint over the entire trace table.
 
-|---|---|---|
+
 | a_next | a | b |
+|---|---|---|
 | 10 | 5 | 5 |
 
 Interpolate the trace as a low degree polynomial, check that the constraint 
