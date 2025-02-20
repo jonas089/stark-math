@@ -22,3 +22,7 @@ If the trace table satisfies the constraint, then the LDE will too!
 Note that initially each constraint polynomial is constructed individually and later they are combined into a single constraint poly. The reason why this works is because all constraint polynomials should evaluate to 0.
 
 A slightly simplified explanation is, that we just add them all together and if one of the is not satisfied then our result will be < or > 0. If all constraints are satisifed the result will always be 0 for the values from the trace table that we test / open.
+
+In reality linear combinations are added when combining the polynomials:
+
+linear_combination_1 * constraint_poly_1 + linear_combination_2 * constraint_poly_2 ... + linear_combination_n * constraint_poly_n = 0
